@@ -1,6 +1,51 @@
-frontend-nanodegree-arcade-game
-===============================
+# Classic arcade game project
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Description
+Classic frogger game.
+## Table of Contents
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+* [Instructions](#instructions)
+* [Dependencies](#dependencies)
+
+## Installation
+1. Download dist directory
+2. Run index.html in browser
+
+## Instructions
+The game starts with three bugs running across the game field. Player starts at the bottom 
+of the screen. Player have to reach the water on the other side of the game field and
+avoid being touched by bugs during gameplay. When player reaches the water the game ends.
+
+## Dependencies
+To run dev or production version you need browser with enabled JavaScript.
+
+## Demo
+https://wodawodawoda.github.io/classic-arcade-game/
+
+## Build setup
+Project was developed using:
+* Webpack 4.6
+* ES6
+* HTML5
+* CSS3
+```bash
+# To install dev-dependencies, just go to the root folder and run
+npm i
+
+# To build production version run
+npm run build
+
+# To build dev version run
+npm run dev
+
+# To run on webpcak-server run
+npm run start
+```
+## Files to review
+* /src/js/app.js contains gameplay code
+* /src/js/engine.js contains game engine code
+* /src/js/resources.js contains code utilities
+* /src/css/style.css contains all game styles
+* /src/index.html contains basic HTML game template
+
+/dist contains dev version of Memory game for presentation purpouse
